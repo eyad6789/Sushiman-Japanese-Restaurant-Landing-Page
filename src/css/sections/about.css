@@ -1,0 +1,95 @@
+  /* About Us Section */
+        .about-us {
+            display: flex;
+            min-height: 720px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f8f8f8 0%, var(--color-white) 100%);
+        }
+
+        .about-us__image {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: var(--color-white);
+            position: relative;
+        }
+
+        .about-us__image div {
+            padding: 32px 64px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+        }
+
+        .about-us__image-sushi3 {
+            border-bottom: 8px solid var(--color-creamson);
+        }
+
+        .about-us__image-sushi3 img {
+            width: 225px;
+            height: 200px;
+            filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.2));
+            transition: all 0.3s ease;
+        }
+
+        .about-us__image-sushi2 img {
+            width: 240px;
+            height: 160px;
+            filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.2));
+            transition: all 0.3s ease;
+        }
+
+        .about-us__image img:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .about-us__button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 16px 32px;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            border-radius: 32px 0 0 32px;
+            border: 0;
+            outline: 0;
+            color: #ffffff;
+            font-family: var(--plus-jakarta-sans);
+            font-weight: 500;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .about-us__button:hover {
+            transform: translateY(-50%) translateX(-10px);
+            box-shadow: -15px 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .about-us__button img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        .about-us__button:hover img {
+            transform: rotate(45deg);
+        }
+
+        .about-us__content {
+            padding: 64px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }

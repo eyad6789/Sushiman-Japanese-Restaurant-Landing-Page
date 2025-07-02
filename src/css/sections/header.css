@@ -1,0 +1,79 @@
+/* Header Styles */
+        .header__nav {
+            display: flex;
+            padding: 0;
+            background: linear-gradient(135deg, var(--color-white) 0%, #f8f8f8 100%);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header__logo {
+            flex: 1;
+            display: flex;
+            position: relative;
+            padding: 20px;
+            background: var(--primary-color);
+            clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 100%, 0 100%);
+        }
+
+        .header__logo h4 {
+            padding-left: 30px;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            z-index: 2;
+            color: #ffffff;
+            font-family: var(--playfair-display);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header__menu {
+            padding: 20px 40px;
+            flex: 1.192;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 48px;
+            list-style: none;
+        }
+
+        .header__menu li {
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            color: var(--secondary-color);
+            font-size: 16px;
+            text-transform: uppercase;
+            line-height: 20px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .header__menu li:hover {
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .header__menu li::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background: var(--primary-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .header__menu li:hover::after {
+            width: 100%;
+        }
+
+        .header__menu-mobile {
+            display: none;
+            padding: 20px;
+            list-style: none;
+        }
